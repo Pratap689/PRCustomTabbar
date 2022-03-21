@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Group 158.png",
+      "filename" : "iconLineBread.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Group 158@2x.png",
+      "filename" : "iconLineBread@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Group 158@3x.png",
+      "filename" : "iconLineBread@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
@@ -19,5 +19,8 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "original"
   }
 }

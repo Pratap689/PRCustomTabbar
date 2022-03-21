@@ -3,13 +3,12 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Everything-->
+        <!--Shop-->
         <scene sceneID="qiC-kY-fQu">
             <objects>
                 <viewController id="5wC-JZ-5lf" customClass="EverythingVC" customModule="CustomTabbar" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Everything" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxO-Cu-mbB">
-                                <rect key="frame" x="134" y="410.5" width="146.5" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxO-Cu-mbB">
+                                <rect key="frame" x="171" y="410.5" width="72" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -31,11 +30,11 @@
                             <constraint firstItem="lxO-Cu-mbB" firstAttribute="centerY" secondItem="Tkc-O2-x5d" secondAttribute="centerY" id="xYk-PI-dDR"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Everything" image="everythingUnselected" selectedImage="everythingSelected" id="AvH-Nz-kh3"/>
+                    <tabBarItem key="tabBarItem" title="Shop" image="shopUnselected" selectedImage="shopSelected" id="AvH-Nz-kh3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wqb-mt-Gae" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-633" y="879"/>
+            <point key="canvasLocation" x="-633.33333333333337" y="878.57142857142856"/>
         </scene>
         <!--Rabbar Controller View Controller-->
         <scene sceneID="fNy-dn-8mm">
@@ -45,11 +44,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" name="AppColor"/>
-                        <color key="selectedImageTintColor" name="AppColor"/>
+                        <color key="tintColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="titntColor">
-                                <color key="value" name="AppColor"/>
+                                <color key="value" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
                                 <color key="value" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -64,17 +62,18 @@
                         <userDefinedRuntimeAttribute type="image" keyPath="closeButtonImage" value="icons8-share-30"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="5wC-JZ-5lf" kind="relationship" relationship="viewControllers" id="qdL-fE-ESn"/>
-                        <segue destination="aII-F1-ETy" kind="relationship" relationship="viewControllers" id="516-iR-D2J"/>
-                        <segue destination="WTr-T3-4FY" kind="relationship" relationship="viewControllers" id="DBr-76-xvQ"/>
-                        <segue destination="547-nL-JSq" kind="relationship" relationship="viewControllers" id="LwQ-fo-rsM"/>
+                        <segue destination="5wC-JZ-5lf" kind="relationship" relationship="viewControllers" id="j59-98-aCj"/>
+                        <segue destination="aII-F1-ETy" kind="relationship" relationship="viewControllers" id="S73-aQ-J3d"/>
+                        <segue destination="WTr-T3-4FY" kind="relationship" relationship="viewControllers" id="8zN-eA-hgW"/>
+                        <segue destination="oU3-IQ-KFV" kind="relationship" relationship="viewControllers" id="TnD-hv-jra"/>
+                        <segue destination="547-nL-JSq" kind="relationship" relationship="viewControllers" id="V4X-ir-bLJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hux-tJ-duH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="699" y="69"/>
         </scene>
-        <!--Snap-->
+        <!--Discover-->
         <scene sceneID="rsR-lJ-En7">
             <objects>
                 <viewController id="aII-F1-ETy" customClass="SnapVc" customModule="CustomTabbar" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,8 +81,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PX8-3H-0or">
-                                <rect key="frame" x="172" y="410.5" width="70.5" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PX8-3H-0or">
+                                <rect key="frame" x="147.5" y="410.5" width="119" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -96,13 +95,13 @@
                             <constraint firstItem="PX8-3H-0or" firstAttribute="centerX" secondItem="apX-8h-7f2" secondAttribute="centerX" id="yyv-e3-YOi"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Snap" image="cameraUnselected" selectedImage="snapSelected" id="uYO-DE-xEU"/>
+                    <tabBarItem key="tabBarItem" title="Discover" image="discoverUnSelected" selectedImage="discoverSelected" id="uYO-DE-xEU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62J-t1-pE5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="183" y="879"/>
         </scene>
-        <!--Shop-->
+        <!--Camera-->
         <scene sceneID="jQP-tR-jfv">
             <objects>
                 <viewController id="WTr-T3-4FY" customClass="ShopVC" customModule="CustomTabbar" customModuleProvider="target" sceneMemberID="viewController">
@@ -110,8 +109,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ca-gk-xtS">
-                                <rect key="frame" x="171.5" y="410.5" width="71.5" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ca-gk-xtS">
+                                <rect key="frame" x="153.5" y="410.5" width="107" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -124,13 +123,13 @@
                             <constraint firstItem="8Ca-gk-xtS" firstAttribute="centerX" secondItem="s5f-pI-mUu" secondAttribute="centerX" id="voG-OL-hKi"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Shop" image="shopUnselected" selectedImage="shopSelected" id="eLc-pq-dXo"/>
+                    <tabBarItem key="tabBarItem" title="Camera" image="cameraUnselected" selectedImage="cameraSelected" id="eLc-pq-dXo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AC4-4C-SI7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="967" y="879"/>
         </scene>
-        <!--Profile-->
+        <!--Profile View Controller-->
         <scene sceneID="iks-Nb-xgQ">
             <objects>
                 <viewController id="547-nL-JSq" customClass="ProfileViewController" customModule="CustomTabbar" customModuleProvider="target" sceneMemberID="viewController">
@@ -159,31 +158,60 @@
                             <constraint firstItem="o8I-pS-Cmj" firstAttribute="leading" secondItem="I1W-F2-Bu2" secondAttribute="leading" constant="60" id="rEk-vy-jsM"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="profileimg" id="Tor-gZ-Cfz"/>
+                    <tabBarItem key="tabBarItem" title="" id="Tor-gZ-Cfz"/>
                     <connections>
                         <outlet property="btnLogout" destination="o8I-pS-Cmj" id="w2K-rm-GaH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VcC-vP-qTl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1726" y="879"/>
+            <point key="canvasLocation" x="2555" y="879"/>
+        </scene>
+        <!--DM's-->
+        <scene sceneID="3Rr-ph-qu0">
+            <objects>
+                <viewController storyboardIdentifier="DM_sViewController" id="oU3-IQ-KFV" customClass="DM_sViewController" customModule="CustomTabbar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KjB-eY-pn7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DMs's" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N99-Oo-h3T">
+                                <rect key="frame" x="164" y="410.5" width="86" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Oib-Fw-GUf"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="N99-Oo-h3T" firstAttribute="centerY" secondItem="Oib-Fw-GUf" secondAttribute="centerY" id="ImJ-Ya-uHE"/>
+                            <constraint firstItem="N99-Oo-h3T" firstAttribute="centerX" secondItem="Oib-Fw-GUf" secondAttribute="centerX" id="wnW-lD-QuD"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="DM's" image="dmUnselected" selectedImage="dmSelected" id="x9b-06-9zi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E47-Nv-2wK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1758" y="879"/>
         </scene>
     </scenes>
     <resources>
-        <image name="cameraUnselected" width="22.5" height="18"/>
-        <image name="everythingSelected" width="23.5" height="19"/>
-        <image name="everythingUnselected" width="23.5" height="19"/>
+        <image name="cameraSelected" width="24" height="24"/>
+        <image name="cameraUnselected" width="24" height="24"/>
+        <image name="discoverSelected" width="24" height="24"/>
+        <image name="discoverUnSelected" width="25" height="24"/>
+        <image name="dmSelected" width="24" height="24"/>
+        <image name="dmUnselected" width="24" height="24"/>
         <image name="icons8-share-30" width="30" height="30"/>
-        <image name="profileimg" width="30" height="30"/>
         <image name="rrrrr" width="386" height="462"/>
-        <image name="shopSelected" width="17.5" height="21"/>
-        <image name="shopUnselected" width="12.5" height="15"/>
-        <image name="snapSelected" width="22.5" height="18"/>
-        <namedColor name="AppColor">
-            <color red="0.98431372549019602" green="0.8784313725490196" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <image name="shopSelected" width="25" height="24"/>
+        <image name="shopUnselected" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

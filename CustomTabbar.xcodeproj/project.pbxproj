@@ -13,12 +13,14 @@
 		AEEC457327DB4326001F3E66 /* SnapVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEC457227DB4326001F3E66 /* SnapVc.swift */; };
 		AEEC457727DB45F9001F3E66 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEC457627DB45F9001F3E66 /* Constants.swift */; };
 		AEEC457927DB638E001F3E66 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEC457827DB638E001F3E66 /* CustomTabView.swift */; };
+		AEF239F727E85F9200E29745 /* DM'sViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF239F627E85F9200E29745 /* DM'sViewController.swift */; };
 		F30D7C4827DA6A2C0048082E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30D7C4727DA6A2C0048082E /* AppDelegate.swift */; };
 		F30D7C4A27DA6A2C0048082E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30D7C4927DA6A2C0048082E /* SceneDelegate.swift */; };
 		F30D7C4F27DA6A2C0048082E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30D7C4D27DA6A2C0048082E /* Main.storyboard */; };
 		F30D7C5127DA6A340048082E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30D7C5027DA6A340048082E /* Assets.xcassets */; };
 		F30D7C5427DA6A340048082E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30D7C5227DA6A340048082E /* LaunchScreen.storyboard */; };
 		F30D7C5C27DA6C530048082E /* CustomTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30D7C5B27DA6C530048082E /* CustomTabVC.swift */; };
+		F3F53F1027E8FB5E00D08DC1 /* DummyTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F53F0F27E8FB5E00D08DC1 /* DummyTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,7 @@
 		AEEC457227DB4326001F3E66 /* SnapVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapVc.swift; sourceTree = "<group>"; };
 		AEEC457627DB45F9001F3E66 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AEEC457827DB638E001F3E66 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		AEF239F627E85F9200E29745 /* DM'sViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DM'sViewController.swift"; sourceTree = "<group>"; };
 		F30D7C4427DA6A2C0048082E /* CustomTabbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTabbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F30D7C4727DA6A2C0048082E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F30D7C4927DA6A2C0048082E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		F30D7C5327DA6A340048082E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F30D7C5527DA6A340048082E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F30D7C5B27DA6C530048082E /* CustomTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabVC.swift; sourceTree = "<group>"; };
+		F3F53F0F27E8FB5E00D08DC1 /* DummyTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 				AEEC456E27DB42FF001F3E66 /* EverythingVC.swift */,
 				AEEC457027DB4310001F3E66 /* ShopVC.swift */,
 				AEEC457227DB4326001F3E66 /* SnapVc.swift */,
+				AEF239F627E85F9200E29745 /* DM'sViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -97,6 +102,7 @@
 				F30D7C5027DA6A340048082E /* Assets.xcassets */,
 				F30D7C5227DA6A340048082E /* LaunchScreen.storyboard */,
 				F30D7C5527DA6A340048082E /* Info.plist */,
+				F3F53F0F27E8FB5E00D08DC1 /* DummyTab.swift */,
 			);
 			path = CustomTabbar;
 			sourceTree = "<group>";
@@ -172,11 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F53F1027E8FB5E00D08DC1 /* DummyTab.swift in Sources */,
 				AEEC456D27DB42A1001F3E66 /* ProfileViewController.swift in Sources */,
 				F30D7C5C27DA6C530048082E /* CustomTabVC.swift in Sources */,
 				AEEC457327DB4326001F3E66 /* SnapVc.swift in Sources */,
 				AEEC457127DB4310001F3E66 /* ShopVC.swift in Sources */,
 				AEEC457727DB45F9001F3E66 /* Constants.swift in Sources */,
+				AEF239F727E85F9200E29745 /* DM'sViewController.swift in Sources */,
 				F30D7C4827DA6A2C0048082E /* AppDelegate.swift in Sources */,
 				AEEC457927DB638E001F3E66 /* CustomTabView.swift in Sources */,
 				AEEC456F27DB42FF001F3E66 /* EverythingVC.swift in Sources */,

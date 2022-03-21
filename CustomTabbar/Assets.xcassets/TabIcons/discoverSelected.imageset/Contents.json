@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "iconSolidBread.png",
+      "filename" : "iconSolidPhone.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "iconSolidBread@2x.png",
+      "filename" : "iconSolidPhone@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "iconSolidBread@3x.png",
+      "filename" : "iconSolidPhone@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
