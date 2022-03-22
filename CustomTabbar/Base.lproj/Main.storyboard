@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="-633.33333333333337" y="878.57142857142856"/>
         </scene>
-        <!--Rabbar Controller View Controller-->
+        <!--Custom Tab Bar-->
         <scene sceneID="fNy-dn-8mm">
             <objects>
-                <tabBarController id="ghm-hf-k1V" customClass="RabbarControllerViewController" customModule="CustomTabbar" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="ghm-hf-k1V" customClass="CustomTabBar" customModule="CustomTabbar" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hUe-1M-LxH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

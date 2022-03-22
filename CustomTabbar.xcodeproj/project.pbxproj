@@ -20,7 +20,6 @@
 		F30D7C5127DA6A340048082E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30D7C5027DA6A340048082E /* Assets.xcassets */; };
 		F30D7C5427DA6A340048082E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30D7C5227DA6A340048082E /* LaunchScreen.storyboard */; };
 		F30D7C5C27DA6C530048082E /* CustomTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30D7C5B27DA6C530048082E /* CustomTabVC.swift */; };
-		F3F53F1027E8FB5E00D08DC1 /* DummyTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F53F0F27E8FB5E00D08DC1 /* DummyTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +38,6 @@
 		F30D7C5327DA6A340048082E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F30D7C5527DA6A340048082E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F30D7C5B27DA6C530048082E /* CustomTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabVC.swift; sourceTree = "<group>"; };
-		F3F53F0F27E8FB5E00D08DC1 /* DummyTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +100,6 @@
 				F30D7C5027DA6A340048082E /* Assets.xcassets */,
 				F30D7C5227DA6A340048082E /* LaunchScreen.storyboard */,
 				F30D7C5527DA6A340048082E /* Info.plist */,
-				F3F53F0F27E8FB5E00D08DC1 /* DummyTab.swift */,
 			);
 			path = CustomTabbar;
 			sourceTree = "<group>";
@@ -178,7 +175,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3F53F1027E8FB5E00D08DC1 /* DummyTab.swift in Sources */,
 				AEEC456D27DB42A1001F3E66 /* ProfileViewController.swift in Sources */,
 				F30D7C5C27DA6C530048082E /* CustomTabVC.swift in Sources */,
 				AEEC457327DB4326001F3E66 /* SnapVc.swift in Sources */,

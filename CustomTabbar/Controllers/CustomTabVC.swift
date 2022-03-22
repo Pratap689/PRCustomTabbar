@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RabbarControllerViewController: UITabBarController {
+class CustomTabBar: UITabBarController {
     private var viewLeadingConst: NSLayoutConstraint!
     var value: CGFloat = 0.0
     var selectedImagee: UIImage?
@@ -17,6 +17,7 @@ class RabbarControllerViewController: UITabBarController {
     var itemWidth: CGFloat  {
         Constants.screenWidth/CGFloat(tabBar.items?.count ?? 0)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         DispatchQueue.main.async { [weak self] in
@@ -50,7 +51,7 @@ class RabbarControllerViewController: UITabBarController {
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15, weight: .bold)], for: .selected)
     }
     
-    private var selectedView: UIView = {
+    private let selectedView: UIView = {
         let profileView = UIView()
         profileView.tag = 0
         profileView.backgroundColor = Constants.profilePageColor
@@ -66,7 +67,7 @@ class RabbarControllerViewController: UITabBarController {
         return profileView
     }()
     
-    private var tabbarImage: UIImageView = {
+    private let tabbarImage: UIImageView = {
         let tabImage = UIImageView()
         tabImage.contentMode = .scaleAspectFit
         tabImage.translatesAutoresizingMaskIntoConstraints = false
@@ -76,10 +77,20 @@ class RabbarControllerViewController: UITabBarController {
     private var tabItemTitle: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Kaysee"
         label.font = .systemFont(ofSize: 13)
         label.textAlignment = .left
         label.numberOfLines = 2
         label.textColor = Constants.applabelColor
+        return label
+    }()
+    
+    private let userInfoTitle: UILabel = {
+        let label = UILabel()
+        label.text = "L3"
+        label.font = .systemFont(ofSize: 12, weight: .bold)
+        label.textColor = Constants.applabelColor
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -95,14 +106,14 @@ class RabbarControllerViewController: UITabBarController {
         return profileView
     }()
     
-    private var profileBackView: UIImageView = {
+    private let profileBackView: UIImageView = {
         let profileBackView = UIImageView()
         profileBackView.image = UIImage(named: "userbackImg")
         profileBackView.translatesAutoresizingMaskIntoConstraints = false
         return profileBackView
     }()
     
-    private var badgeView: UIView = {
+    private let badgeView: UIView = {
         let badgeView = UIView()
         badgeView.backgroundColor = UIColor.init(red: 88/255, green: 100/255, blue: 247/255, alpha: 1)
         badgeView.translatesAutoresizingMaskIntoConstraints = false
@@ -110,9 +121,9 @@ class RabbarControllerViewController: UITabBarController {
         return badgeView
     }()
     
-    private var badgeCount: UILabel = {
+    private let badgeCount: UILabel = {
         let badgeCount = UILabel()
-        badgeCount.text = "23"
+        badgeCount.text = "1"
         badgeCount.textColor = .white
         badgeCount.font = .systemFont(ofSize: 8)
         badgeCount.textAlignment = .center
@@ -120,9 +131,10 @@ class RabbarControllerViewController: UITabBarController {
         return badgeCount
     }()
     
-    private var profileViewContainer: UIView = {
+    private let profileViewContainer: UIView = {
         let profileViewContainer = UIView()
         profileViewContainer.isUserInteractionEnabled = false
+        profileViewContainer.alpha = 0
         profileViewContainer.translatesAutoresizingMaskIntoConstraints = false
         return profileViewContainer
     }()
@@ -139,6 +151,16 @@ class RabbarControllerViewController: UITabBarController {
         stckVew.axis = .vertical
         stckVew.translatesAutoresizingMaskIntoConstraints = false
         return stckVew
+    }()
+    
+    private let xpCount_label: UILabel = {
+        let lbl = UILabel()
+        lbl.textAlignment = .center
+        lbl.text = "+32 XP"
+        lbl.font = .systemFont(ofSize: 15, weight: .semibold)
+        lbl.textColor = UIColor.init(red: 88/255, green: 100/255, blue: 247/255, alpha: 1)
+        lbl.translatesAutoresizingMaskIntoConstraints = false
+        return lbl
     }()
     
     private func addItemsInstackView() {
@@ -196,6 +218,33 @@ class RabbarControllerViewController: UITabBarController {
         movingViewTrailingConst = selectedView.trailingAnchor.constraint(equalTo: tabBar.trailingAnchor, constant: -15)
         movingViewTrailingConst.isActive = true
         addProfileViewLayoyts(isAddingOnMainView: false)
+        addXPCountlbl()
+    }
+    
+    private func animateProfileViewWithFadeAnimation() {
+        UIView.animate(withDuration: 3) {
+            self.profileViewContainer.alpha = 1
+        }
+    }
+    
+    private func addXPCountlbl() {
+        view.insertSubview(xpCount_label, at: 3)
+        NSLayoutConstraint.activate([
+            xpCount_label.centerYAnchor.constraint(equalTo: selectedView.centerYAnchor, constant: -15),
+            xpCount_label.trailingAnchor.constraint(equalTo: selectedView.trailingAnchor, constant: -itemWidth/2 + 25)
+        ])
+        fadeXPLabelAndAddProfileView()
+    }
+    
+    private func fadeXPLabelAndAddProfileView() {
+        UIView.animate(withDuration: 0.2, delay: 0.8) {
+            self.xpCount_label.alpha = 0
+        } completion: { success in
+            if success {
+                self.xpCount_label.removeFromSuperview()
+                self.animateProfileViewWithFadeAnimation()
+            }
+        }
     }
     
     //MARK: Use this Method to Move Yellow View Accross TabItems
@@ -214,7 +263,7 @@ class RabbarControllerViewController: UITabBarController {
     }
 }
 
-extension RabbarControllerViewController: UITabBarControllerDelegate {
+extension CustomTabBar: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         let selectedImage = tabBarController.selectedViewController?.tabBarItem.selectedImage
         selectedImagee = selectedImage
